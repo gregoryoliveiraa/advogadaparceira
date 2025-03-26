@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processos - Advogada Parceira</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(90deg, rgba(139,92,246,0.1) 0%, rgba(255,255,255,0) 100%);
+        }
+        .process-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Barra de navegação -->
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/">
+                            <img class="h-8 w-auto" src="https://via.placeholder.com/160x40?text=Advogada+Parceira" alt="Advogada Parceira">
+                        </a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="/" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Home
+                        </a>
+                        <a href="/clientes.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Clientes
+                        </a>
+                        <a href="/processos.html" class="border-purple-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Processos
+                        </a>
+                        <a href="/ferramentas.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Ferramentas
+                        </a>
+                        <a href="/comunidade.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Comunidade
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <a href="/login.html" class="text-purple-600 hover:text-purple-700 font-medium mr-4">
+                        Entrar
+                    </a>
+                    <a href="/cadastro.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 focus:outline-none">
+                        Comece grátis
+                    </a>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner principal -->
+    <div class="hero-gradient">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+                    Gestão de Processos
+                </h1>
+                <p class="mt-5 max-w-xl mx-auto text-xl text-gray-500">
+                    Controle todos os seus processos judiciais de forma eficiente e organizada com nossas ferramentas especializadas.
+                </p>
+                <div class="mt-8 flex justify-center">
+                    <a href="/cadastro.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 focus:outline-none">
+                        Começar a gerenciar processos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefícios -->
+    <div class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900">Benefícios da nossa gestão processual</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                    Descubra como nossa plataforma pode otimizar o acompanhamento e gestão dos seus processos
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Benefício 1 -->
+                    <div class="bg-gray-50 rounded-lg p-6 process-card">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mx-auto">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3 class="mt-5 text-lg leading-6 font-medium text-gray-900 text-center">Controle de prazos</h3>
+                        <p class="mt-2 text-base text-gray-500 text-center">
+                            Acompanhe todos os prazos processuais com alertas automáticos e nunca mais perca um deadline importante.
+                        </p>
+                    </div>
+
+                    <!-- Benefício 2 -->
+                    <div class="bg-gray-50 rounded-lg p-6 process-card">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mx-auto">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="mt-5 text-lg leading-6 font-medium text-gray-900 text-center">Busca avançada</h3>
+                        <p class="mt-2 text-base text-gray-500 text-center">
+                            Localize qualquer processo rapidamente através de diversos critérios de busca, como cliente, número ou tema.
+                        </p>
+                    </div>
+
+                    <!-- Benefício 3 -->
+                    <div class="bg-gray-50 rounded-lg p-6 process-card">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mx-auto">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="mt-5 text-lg leading-6 font-medium text-gray-900 text-center">Relatórios analíticos</h3>
+                        <p class="mt-2 text-base text-gray-500 text-center">
+                            Gere estatísticas e relatórios sobre seus processos para tomadas de decisão mais estratégicas.
+                        </p>
+                    </div>
+
+                    <!-- Benefício 4 -->
+                    <div class="bg-gray-50 rounded-lg p-6 process-card">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mx-auto">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h3 class="mt-5 text-lg leading-6 font-medium text-gray-900 text-center">Notificações automatizadas</h3>
+                        <p class="mt-2 text-base text-gray-500 text-center">
+                            Receba atualizações automáticas sobre movimentações processuais por e-mail ou notificações no app.
+                        </p>
+                    </div>
+
+                    <!-- Benefício 5 -->
+                    <div class="bg-gray-50 rounded-lg p-6 process-card">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mx-auto">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="mt-5 text-lg leading-6 font-medium text-gray-900 text-center">Gestão documental</h3>
+                        <p class="mt-2 text-base text-gray-500 text-center">
+                            Armazene todos os documentos relacionados aos processos de forma organizada e segura na nuvem.
+                        </p>
+                    </div>
+
+                    <!-- Benefício 6 -->
+                    <div class="bg-gray-50 rounded-lg p-6 process-card">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mx-auto">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="mt-5 text-lg leading-6 font-medium text-gray-900 text-center">Acesso compartilhado</h3>
+                        <p class="mt-2 text-base text-gray-500 text-center">
+                            Compartilhe informações processuais com sua equipe ou clientes, com níveis personalizados de permissão.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Como funciona -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900">Como funciona</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                    Conheça o passo a passo para gerenciar seus processos na nossa plataforma
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+                    <!-- Passo 1 -->
+                    <div class="relative">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mb-4">
+                            <span class="text-lg font-semibold">1</span>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-900">Cadastre seus processos</h3>
+                        <p class="mt-2 text-base text-gray-500">
+                            Adicione todas as informações relevantes do processo, como número, vara, comarca, partes, objeto e documentos. Você pode importar dados em lote para agilizar o cadastro.
+                        </p>
+                    </div>
+
+                    <!-- Passo 2 -->
+                    <div class="mt-10 lg:mt-0 relative">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mb-4">
+                            <span class="text-lg font-semibold">2</span>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-900">Configure os prazos e alertas</h3>
+                        <p class="mt-2 text-base text-gray-500">
+                            Defina os prazos processuais e audiências, e configure alertas para você e sua equipe. Nosso sistema calcula automaticamente os prazos conforme o calendário forense.
+                        </p>
+                    </div>
+
+                    <!-- Passo 3 -->
+                    <div class="mt-10 lg:mt-0 relative">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mb-4">
+                            <span class="text-lg font-semibold">3</span>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-900">Acompanhe as movimentações</h3>
+                        <p class="mt-2 text-base text-gray-500">
+                            Registre cada movimentação processual no sistema ou utilize nossa integração com tribunais para importar atualizações automaticamente, mantendo seu histórico sempre atualizado.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-3 lg:gap-8 mt-12">
+                    <!-- Passo 4 -->
+                    <div class="relative">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mb-4">
+                            <span class="text-lg font-semibold">4</span>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-900">Organize seus documentos</h3>
+                        <p class="mt-2 text-base text-gray-500">
+                            Armazene todas as petições, decisões, sentenças e documentos relacionados ao processo em pastas organizadas, com acesso rápido e seguro a qualquer momento.
+                        </p>
+                    </div>
+
+                    <!-- Passo 5 -->
+                    <div class="mt-10 lg:mt-0 relative">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mb-4">

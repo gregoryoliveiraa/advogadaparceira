@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes e Parceiros - Advogada Parceira</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(90deg, rgba(139,92,246,0.1) 0%, rgba(255,255,255,0) 100%);
+        }
+        .cliente-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Barra de navegação -->
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/">
+                            <img class="h-8 w-auto" src="https://via.placeholder.com/160x40?text=Advogada+Parceira" alt="Advogada Parceira">
+                        </a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="/" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Home
+                        </a>
+                        <a href="/clientes.html" class="border-purple-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Clientes
+                        </a>
+                        <a href="/servicos.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Serviços
+                        </a>
+                        <a href="/ferramentas.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Ferramentas
+                        </a>
+                        <a href="/contato.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Contato
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <a href="/login.html" class="text-purple-600 hover:text-purple-700 font-medium mr-4">
+                        Entrar
+                    </a>
+                    <a href="/cadastro.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 focus:outline-none">
+                        Comece grátis
+                    </a>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner principal -->
+    <div class="hero-gradient">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+                    Nossos Clientes e Parceiros
+                </h1>
+                <p class="mt-5 max-w-xl mx-auto text-xl text-gray-500">
+                    Conheça os escritórios e profissionais que já confiam na Advogada Parceira para otimizar sua rotina jurídica.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Principais clientes -->
+    <div class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-center text-gray-900 mb-8">Escritórios de Advocacia</h2>
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Cliente 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden cliente-card">
+                    <img class="h-48 w-full object-cover" src="https://via.placeholder.com/400x200?text=Silva+Advogados" alt="Logo Silva Advogados">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Silva & Associados</h3>
+                        <p class="mt-2 text-gray-600">Especialistas em direito empresarial e tributário, com mais de 15 anos de experiência no mercado.</p>
+                        <div class="mt-4 flex">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Direito Empresarial</span>
+                            <span class="ml-2 bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tributário</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">Visitar website →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cliente 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden cliente-card">
+                    <img class="h-48 w-full object-cover" src="https://via.placeholder.com/400x200?text=Oliveira+Advogados" alt="Logo Oliveira Advogados">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Oliveira Advogados</h3>
+                        <p class="mt-2 text-gray-600">Equipe multidisciplinar focada em soluções jurídicas personalizadas para pequenas e médias empresas.</p>
+                        <div class="mt-4 flex">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Contratos</span>
+                            <span class="ml-2 bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Trabalhista</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">Visitar website →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cliente 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden cliente-card">
+                    <img class="h-48 w-full object-cover" src="https://via.placeholder.com/400x200?text=Costa+Jurídico" alt="Logo Costa Jurídico">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Costa Jurídico</h3>
+                        <p class="mt-2 text-gray-600">Advocacia moderna com foco em tecnologia e inovação, atendendo startups e empresas de tecnologia.</p>
+                        <div class="mt-4 flex">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Propriedade Intelectual</span>
+                            <span class="ml-2 bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Startups</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">Visitar website →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cliente 4 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden cliente-card">
+                    <img class="h-48 w-full object-cover" src="https://via.placeholder.com/400x200?text=Santos+Legal" alt="Logo Santos Legal">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Santos Legal</h3>
+                        <p class="mt-2 text-gray-600">Escritório especializado em direito civil e de família, com atendimento humanizado e personalizado.</p>
+                        <div class="mt-4 flex">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Direito Civil</span>
+                            <span class="ml-2 bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Família</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">Visitar website →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cliente 5 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden cliente-card">
+                    <img class="h-48 w-full object-cover" src="https://via.placeholder.com/400x200?text=Ferreira+Law" alt="Logo Ferreira Law">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Ferreira Law</h3>
+                        <p class="mt-2 text-gray-600">Escritório internacional com foco em comércio exterior, contratos internacionais e arbitragem.</p>
+                        <div class="mt-4 flex">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Internacional</span>
+                            <span class="ml-2 bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Arbitragem</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">Visitar website →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cliente 6 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden cliente-card">
+                    <img class="h-48 w-full object-cover" src="https://via.placeholder.com/400x200?text=Mendes+Advocacia" alt="Logo Mendes Advocacia">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Mendes Advocacia</h3>
+                        <p class="mt-2 text-gray-600">Especialistas em direito imobiliário, atuando em todo o processo de compra, venda e regularização.</p>
+                        <div class="mt-4 flex">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Imobiliário</span>
+                            <span class="ml-2 bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Contratos</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">Visitar website →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Advogados Autônomos -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-center text-gray-900 mb-8">Advogados Autônomos</h2>
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Advogado 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden cliente-card">
+                    <div class="p-6 text-center">
+                        <img class="h-24 w-24 rounded-full mx-auto" src="https://via.placeholder.com/150?text=MR" alt="Foto Maria Rodrigues">
+                        <h3 class="mt-4 text-xl font-semibold text-gray-900">Dra. Maria Rodrigues</h3>
+                        <p class="mt-2 text-purple-600 font-medium">Direito Trabalhista</p>
+                        <p class="mt-2 text-gray-600">Advogada especialista
