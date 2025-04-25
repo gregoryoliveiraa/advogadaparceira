@@ -3,314 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advogada Parceira - Ferramentas jurídicas para otimizar seu trabalho</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Advogada Parceira - Plataforma para Advogados</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #1976d2;
-            --primary-dark: #1565c0;
-            --primary-light: #42a5f5;
+            --primary-color: #1e4562;
+            --primary-dark: #163349;
+            --primary-light: #2a5c80;
         }
+        
+        .text-primary { color: var(--primary-color); }
+        .text-primary-dark { color: var(--primary-dark); }
+        .text-primary-light { color: var(--primary-light); }
+        
         .bg-primary { background-color: var(--primary-color); }
         .bg-primary-dark { background-color: var(--primary-dark); }
         .bg-primary-light { background-color: var(--primary-light); }
-        .text-primary { color: var(--primary-color); }
+        
         .border-primary { border-color: var(--primary-color); }
+        .border-primary-dark { border-color: var(--primary-dark); }
+        .border-primary-light { border-color: var(--primary-light); }
+        
+        .hover\:text-primary:hover { color: var(--primary-color); }
+        .hover\:text-primary-dark:hover { color: var(--primary-dark); }
+        .hover\:text-primary-light:hover { color: var(--primary-light); }
+        
+        .hover\:bg-primary:hover { background-color: var(--primary-color); }
         .hover\:bg-primary-dark:hover { background-color: var(--primary-dark); }
+        .hover\:bg-primary-light:hover { background-color: var(--primary-light); }
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Navegação -->
-    <nav class="bg-white shadow-sm">
+    <nav class="bg-white shadow-lg fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
-                        <a href="/" class="text-primary font-bold text-xl">
-                            Advogada Parceira
-                        </a>
-                    </div>
-                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                        <a href="/" class="border-primary text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                            Dashboard
-                        </a>
-                        <a href="/clientes" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                            Clientes
-                        </a>
-                        <a href="/processos" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                            Processos
-                        </a>
-                        <a href="/ferramentas" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                            Ferramentas
-                        </a>
-                        <a href="/comunidade" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                            Comunidade
-                        </a>
+                        <a href="/" class="text-primary font-bold text-xl">Advogada Parceira</a>
                     </div>
                 </div>
-                <div class="hidden sm:ml-6 sm:flex sm:items-center">
-                    <button class="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
-                        <span class="sr-only">Ver notificações</span>
-                        <i class="fas fa-bell"></i>
-                    </button>
-                    <div class="ml-3 relative">
-                        <div>
-                            <button type="button" class="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                                <span class="sr-only">Abrir menu de usuário</span>
-                                <i class="fas fa-user text-2xl"></i>
-                            </button>
-                        </div>
-                    </div>
+                <div class="flex items-center">
+                    <a href="https://app.advogadaparceira.com.br" class="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-primary-dark">Acessar Plataforma</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Banner principal -->
-    <div class="bg-white">
-        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    <main class="pt-16">
+        <section class="bg-primary-light bg-opacity-10 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                    <div>
+                        <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                            <span class="block">Transforme sua</span>
+                            <span class="block text-primary">advocacia</span>
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-8">
+                            Plataforma completa para advogados autônomos e escritórios de advocacia gerenciarem seus processos, clientes e documentos.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://app.advogadaparceira.com.br" class="bg-primary text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary-dark">
+                                Comece Agora
+                            </a>
+                            <a href="#recursos" class="bg-white text-primary px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-50 border border-primary">
+                                Saiba Mais
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-12 lg:mt-0">
+                        <img src="home.jpg" alt="Advogada Parceira" class="rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Recursos Completos</h2>
+                    <p class="text-xl text-gray-600 mt-4">Tudo que você precisa para gerenciar sua advocacia</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="text-primary mb-4">
+                            <i class="fas fa-users text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Gestão de Clientes</h3>
+                        <p class="text-gray-600">Cadastre e organize todos os seus clientes em um só lugar.</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="text-primary mb-4">
+                            <i class="fas fa-gavel text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Controle de Processos</h3>
+                        <p class="text-gray-600">Acompanhe seus processos e nunca perca um prazo.</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="text-primary mb-4">
+                            <i class="fas fa-file-alt text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Documentos</h3>
+                        <p class="text-gray-600">Organize e acesse seus documentos de forma segura.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-primary-light bg-opacity-10 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Comece Agora</h2>
+                    <p class="text-xl text-gray-600 mb-8">Experimente gratuitamente por 14 dias</p>
+                    <a href="https://app.advogadaparceira.com.br" class="bg-primary text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary-dark inline-block">
+                        Criar Conta Grátis
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
-                    <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                        <span class="block">Acelere o seu</span>
-                        <span class="block text-primary">trabalho com ferramentas jurídicas</span>
-                    </h1>
-                    <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg">
-                        Crie documentos de qualidade em minutos, não horas. Encontre petições, contratos e modelos prontos para usar. E muito mais.
-                    </p>
-                    <div class="mt-8">
-                        <a href="http://app.advogadaparceira.com.br/login" class="bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-md shadow-sm transition-colors">
-                            Comece grátis
-                        </a>
-                    </div>
+                    <h3 class="text-lg font-semibold mb-4">Advogada Parceira</h3>
+                    <p class="text-gray-400">Transformando a advocacia através da tecnologia.</p>
                 </div>
-                <div class="mt-12 lg:mt-0">
-                    <img class="w-full" src="img/home.jpg" alt="Advocacia digital">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-white">Início</a></li>
+                        <li><a href="/ferramentas" class="text-gray-400 hover:text-white">Ferramentas</a></li>
+                        <li><a href="https://app.advogadaparceira.com.br" class="text-gray-400 hover:text-white">Plataforma</a></li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Promoção especial -->
-    <div class="bg-primary-light bg-opacity-10">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                <span class="block">Conheça a nossa oferta especial</span>
-                <span class="block text-primary">50% de desconto nas 3 primeiras mensalidades</span>
-            </h2>
-            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-                <div class="inline-flex rounded-md shadow">
-                    <a href="http://app.advogadaparceira.com.br/register" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-dark">
-                        Comece agora
-                    </a>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contato</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">contato@advogadaparceira.com.br</li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- O que é a Advogada Parceira -->
-    <div class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Plataforma completa</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    O que é a Advogada Parceira?
-                </p>
-                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                    A Advogada Parceira é uma plataforma de ferramentas jurídicas que te ajuda a trabalhar mais rápido e com menos erros.
-                </p>
-            </div>
-
-            <div class="mt-10">
-                <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-                    <div class="relative">
-                        <dt>
-                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
-                                <i class="fas fa-file-alt"></i>
-                            </div>
-                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Modelos de petição</p>
-                        </dt>
-                        <dd class="mt-2 ml-16 text-base text-gray-500">
-                            Encontre modelos prontos para usar em segundos
-                        </dd>
-                    </div>
-
-                    <div class="relative">
-                        <dt>
-                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
-                                <i class="fas fa-search"></i>
-                            </div>
-                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Pesquisa de jurisprudência</p>
-                        </dt>
-                        <dd class="mt-2 ml-16 text-base text-gray-500">
-                            Pesquise decisões judiciais de todo o país
-                        </dd>
-                    </div>
-
-                    <div class="relative">
-                        <dt>
-                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
-                                <i class="fas fa-magic"></i>
-                            </div>
-                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Automação de documentos</p>
-                        </dt>
-                        <dd class="mt-2 ml-16 text-base text-gray-500">
-                            Crie documentos personalizados em minutos
-                        </dd>
-                    </div>
-
-                    <div class="relative">
-                        <dt>
-                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Economia de tempo</p>
-                        </dt>
-                        <dd class="mt-2 ml-16 text-base text-gray-500">
-                            Nossos clientes economizam em média 8 horas por semana
-                        </dd>
-                    </div>
-                </dl>
-            </div>
-        </div>
-    </div>
-
-    <!-- Ferramentas -->
-    <div class="bg-gray-50 py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-extrabold text-gray-900">
-                Ferramentas jurídicas completas
-            </h2>
-            <p class="mt-4 text-lg text-gray-500">
-                Seja advogado autônomo ou em um escritório de advocacia, temos tudo que você precisa para acelerar o seu trabalho.
-            </p>
-
-            <div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-                <div class="group relative">
-                    <div class="w-full bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <div class="p-6">
-                            <div class="text-primary mb-2">
-                                <i class="fas fa-file-alt text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-medium text-gray-900">
-                                Modelos de petições
-                            </h3>
-                            <p class="mt-2 text-sm text-gray-500">
-                                Encontre petições, contestações e recursos prontos para usar
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group relative">
-                    <div class="w-full bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <div class="p-6">
-                            <div class="text-primary mb-2">
-                                <i class="fas fa-search text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-medium text-gray-900">
-                                Pesquisa jurídica
-                            </h3>
-                            <p class="mt-2 text-sm text-gray-500">
-                                Pesquise artigos, jurisprudência e doutrina em segundos
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group relative">
-                    <div class="w-full bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <div class="p-6">
-                            <div class="text-primary mb-2">
-                                <i class="fas fa-tasks text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-medium text-gray-900">
-                                Controle de processos
-                            </h3>
-                            <p class="mt-2 text-sm text-gray-500">
-                                Tenha controle total dos seus processos judiciais
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group relative">
-                    <div class="w-full bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <div class="p-6">
-                            <div class="text-primary mb-2">
-                                <i class="fas fa-comments text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-medium text-gray-900">
-                                Consultoria jurídica
-                            </h3>
-                            <p class="mt-2 text-sm text-gray-500">
-                                Receba consultoria jurídica de um advogado especialista
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group relative">
-                    <div class="w-full bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <div class="p-6">
-                            <div class="text-primary mb-2">
-                                <i class="fas fa-calendar-alt text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-medium text-gray-900">
-                                Agenda de prazos
-                            </h3>
-                            <p class="mt-2 text-sm text-gray-500">
-                                Nunca perca um prazo importante com nossa agenda inteligente
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group relative">
-                    <div class="w-full bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <div class="p-6">
-                            <div class="text-primary mb-2">
-                                <i class="fas fa-chart-line text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-medium text-gray-900">
-                                Relatórios e análises
-                            </h3>
-                            <p class="mt-2 text-sm text-gray-500">
-                                Acompanhe o desempenho do seu escritório com relatórios detalhados
-                            </p>
-                        </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-white">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div class="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
-                <div class="flex space-x-6 md:order-2">
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <span class="sr-only">Facebook</span>
-                        <i class="fab fa-facebook text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <span class="sr-only">Instagram</span>
-                        <i class="fab fa-instagram text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <span class="sr-only">Twitter</span>
-                        <i class="fab fa-twitter text-xl"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <span class="sr-only">LinkedIn</span>
-                        <i class="fab fa-linkedin text-xl"></i>
-                    </a>
-                </div>
-                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-                    &copy; 2025 Advogada Parceira. Todos os direitos reservados.
-                </p>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Advogada Parceira. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
