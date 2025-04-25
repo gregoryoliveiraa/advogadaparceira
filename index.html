@@ -11,27 +11,35 @@
             --primary-color: #1e4562;
             --primary-dark: #163349;
             --primary-light: #2a5c80;
+            --accent-color: rgb(224, 119, 80);
+            --accent-dark: rgb(200, 100, 70);
+            --accent-light: rgb(240, 140, 100);
         }
         
         .text-primary { color: var(--primary-color); }
         .text-primary-dark { color: var(--primary-dark); }
         .text-primary-light { color: var(--primary-light); }
+        .text-accent { color: var(--accent-color); }
         
         .bg-primary { background-color: var(--primary-color); }
         .bg-primary-dark { background-color: var(--primary-dark); }
         .bg-primary-light { background-color: var(--primary-light); }
+        .bg-accent { background-color: var(--accent-color); }
         
         .border-primary { border-color: var(--primary-color); }
         .border-primary-dark { border-color: var(--primary-dark); }
         .border-primary-light { border-color: var(--primary-light); }
+        .border-accent { border-color: var(--accent-color); }
         
         .hover\:text-primary:hover { color: var(--primary-color); }
         .hover\:text-primary-dark:hover { color: var(--primary-dark); }
         .hover\:text-primary-light:hover { color: var(--primary-light); }
+        .hover\:text-accent:hover { color: var(--accent-color); }
         
         .hover\:bg-primary:hover { background-color: var(--primary-color); }
         .hover\:bg-primary-dark:hover { background-color: var(--primary-dark); }
         .hover\:bg-primary-light:hover { background-color: var(--primary-light); }
+        .hover\:bg-accent:hover { background-color: var(--accent-color); }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -44,7 +52,7 @@
                     </div>
                 </div>
                 <div class="flex items-center">
-                    <a href="https://app.advogadaparceira.com.br" class="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-primary-dark">Acessar Plataforma</a>
+                    <a href="https://app.advogadaparceira.com.br" class="bg-accent text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-accent-dark">Acessar Plataforma</a>
                 </div>
             </div>
         </div>
@@ -57,16 +65,16 @@
                     <div>
                         <h1 class="text-4xl font-bold text-gray-900 mb-4">
                             <span class="block">Transforme sua</span>
-                            <span class="block text-primary">advocacia</span>
+                            <span class="block text-accent">advocacia</span>
                         </h1>
                         <p class="text-xl text-white mb-8">
                             Plataforma completa para advogados autônomos e escritórios de advocacia gerenciarem seus processos, clientes e documentos.
                         </p>
                         <div class="flex space-x-4">
-                            <a href="https://app.advogadaparceira.com.br" class="bg-primary text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary-dark">
+                            <a href="https://app.advogadaparceira.com.br" class="bg-accent text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-accent-dark">
                                 Comece Agora
                             </a>
-                            <a href="#recursos" class="bg-white text-primary px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-50 border border-primary">
+                            <a href="#recursos" class="bg-white text-accent px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-50 border border-accent">
                                 Saiba Mais
                             </a>
                         </div>
@@ -87,7 +95,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                        <div class="text-primary mb-4">
+                        <div class="text-accent mb-4">
                             <i class="fas fa-users text-3xl"></i>
                         </div>
                         <h3 class="text-xl font-semibold mb-2">Gestão de Clientes</h3>
@@ -95,7 +103,7 @@
                     </div>
 
                     <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                        <div class="text-primary mb-4">
+                        <div class="text-accent mb-4">
                             <i class="fas fa-gavel text-3xl"></i>
                         </div>
                         <h3 class="text-xl font-semibold mb-2">Controle de Processos</h3>
@@ -103,7 +111,7 @@
                     </div>
 
                     <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                        <div class="text-primary mb-4">
+                        <div class="text-accent mb-4">
                             <i class="fas fa-file-alt text-3xl"></i>
                         </div>
                         <h3 class="text-xl font-semibold mb-2">Documentos</h3>
@@ -118,7 +126,7 @@
                 <div class="text-center">
                     <h2 class="text-3xl font-bold text-gray-900 mb-4">Comece Agora</h2>
                     <p class="text-xl text-gray-600 mb-8">Experimente gratuitamente por 14 dias</p>
-                    <a href="https://app.advogadaparceira.com.br" class="bg-primary text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary-dark inline-block">
+                    <a href="https://app.advogadaparceira.com.br" class="bg-accent text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-accent-dark inline-block">
                         Criar Conta Grátis
                     </a>
                 </div>
@@ -150,8 +158,8 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Redes Sociais</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-accent"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
